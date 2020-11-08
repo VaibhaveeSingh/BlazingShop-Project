@@ -1,0 +1,39 @@
+﻿
+@using Microsoft.AspNet.Identity
+<div class=" " style="background-image: linear-gradient(#1b0546, #66003B ); height:600px ">
+    @if (Request.IsAuthenticated)
+    {
+
+        <aside class="side-nav">
+            <button class="btn btn-block">
+                <i class="fa fa-home " aria-hidden="false"></i>
+                <a href="~/Home/Index"><i class="fa fa-home "></i>Home</a>
+            </button>
+            <button class="btn btn-block">
+                <i class="fa fa-tasks" aria-hidden="true"></i>
+                <a href="~/Category/Index">Category</a>
+            </button>
+            <button class="btn btn-block">
+                <i class="fa fa-tasks" aria-hidden="true"></i>
+                <a href="~/Product/Index">Products</a>
+            </button>
+            <button class="btn btn-block">
+                <i class="fa fa-tasks" aria-hidden="true"></i>
+                <a href="~/Appointments/Index">Appointments</a>
+            </button>
+        </aside>
+    }
+    else
+    {
+        <aside class="side-nav">
+            <button class="btn btn-block">
+                <i class="fa fa-home " aria-hidden="false"></i>
+                <a href="~/Home/Index">Home</a>
+            </button>
+
+        </aside>
+
+
+    }
+</div>
+
